@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.bgImage{
+  width: 100%;
+  height: 100vh;
 }
+.backGround{
+  position: absolute;
+  z-index: -2;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backGround::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.headerContent{
+  position: relative;
+  z-index: 50;
+  padding-top: 1em;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo{
+  width:150px;
+  margin: 0 3em ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, #000 20%, transparent);
+}
+.cards {
+  background: #000;
+}
+.heading{
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 96px; 
+  color: white;
+}
+.para{
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+opacity: 0.6;
+color: white;
+}
+.circle{
+  padding:2em;
+  transform: rotate(45deg);
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-active {
+  border: 2px solid rgba(221, 76, 172, 1);
+  border-left: 2px solid gray ;
+}
+.custom-inactive {
+  border: 2px solid gray;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+}
+.circle-1{
+  transform: rotate(-45deg);
+  text-align: center;
+}
+.dark {
+  background-color: #000;
+}
+.review {
+  border: 2px solid #E5AF56;
+  border-radius: 16px;
+  box-shadow: 5px -5px 1px #5293E8;
+}
+.img{
+  width: 200px;
+  box-shadow: 10px 10px 10px  #301A68;
+}
+.crd{
+  background: linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%);
+  color: white;
+}
+.reviewImg{
+  width: 50px;
+}
+.flag{
+  width: 20px;
+}
+.palo{
+  width: 100px;
+}
+.vctr{
+  width:16px;
 }
