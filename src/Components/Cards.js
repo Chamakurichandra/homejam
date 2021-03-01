@@ -15,7 +15,7 @@ export default class Cards extends Component {
                 <img className="img" src={this.state.prof.profile} alt=""/>
               </div>
               <div className="card-footer">
-                <button className="btn btn-warning py-0">{this.state.prof.button}</button>
+                <button className="btn btn-warning py-0 mb-2">{this.state.prof.button}</button>
                 <p>{this.state.prof.name}</p>
                 < a href="#1">{this.state.prof.info} -&gt;</a>
               </div>
