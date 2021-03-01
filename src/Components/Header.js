@@ -13,7 +13,7 @@ export default class Header extends Component {
 <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
   <a className="navbar-brand" href="#1">
 
-  <img src={Logo} width="150" height="auto" alt=""/>
+  <img src={Logo} className="logo" width="150" height="auto" alt=""/>
   </a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon "></span>
